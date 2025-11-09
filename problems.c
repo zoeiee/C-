@@ -19,7 +19,7 @@ printf("will this work?");
 
 
 
-#include <stdio.h>
+/*#include <stdio.h>
 int main() {
     int i;
     char str[100];
@@ -34,4 +34,30 @@ int main() {
 
     printf("Your uppercase sentence is: %s", str);
         return 0;
+}*/
+
+#include <stdlib.h>
+int main() {
+    int i, last = -1;
+    char str[100], ch;
+
+
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    printf("Enter the character you want to find: ");
+    scanf("%c", &ch);
+
+    for (i = 0; str[i] != '\0'; i++) {
+        if (str[i] == ch) {
+            last = i;
+        }
+   if (last == -1)
+       printf("Character not found!");
+   else
+       printf("Last occurence at index %d", last);
+
+        return 0;
+    }
 }
