@@ -90,20 +90,22 @@ int main() {
 
 }*/
 
-#include <stdio.h>
-int main() {
-int num, d1, d2, d3, d4, sum;
-    printf("Enter a number: ");
-    scanf("%d",&num);
-    d1 = num / 1000;
-    d2 = num / 100 % 10;
-    d3 = num / 10 % 10;
-    d4 = num % 10;
 
-    sum = d1+d2+d3+d4;
-    printf("%d %d %d %d\n",d1,d2,d3,d4);
-    printf("Sum = %d\n",sum);
+
+
+#include <string.h>
+int main() {
+    int count = 0;
+char str[50];
+    printf("Enter a string: ");
+    fgets(str, 50, stdin);
+    count = strlen(str);
+    printf("You entered: %d", count);
     return 0;
 
+
+
+
 }
+
 
