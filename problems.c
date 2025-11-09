@@ -75,7 +75,7 @@ char s1[10];
 
 
 
-#include <stdio.h>
+/*#include <stdio.h>
 int main() {
     int n;
     int minutes, hours, seconds;
@@ -86,6 +86,23 @@ int main() {
     printf("Time in hours: %d\n", hours);
     printf("Time in minutes: %d\n", minutes);
 
+    return 0;
+
+}*/
+
+#include <stdio.h>
+int main() {
+int num, d1, d2, d3, d4, sum;
+    printf("Enter a number: ");
+    scanf("%d",&num);
+    d1 = num / 1000;
+    d2 = num / 100 % 10;
+    d3 = num / 10 % 10;
+    d4 = num % 10;
+
+    sum = d1+d2+d3+d4;
+    printf("%d %d %d %d\n",d1,d2,d3,d4);
+    printf("Sum = %d\n",sum);
     return 0;
 
 }
