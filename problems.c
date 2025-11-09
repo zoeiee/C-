@@ -37,7 +37,7 @@ int main() {
 }*/
 
 #include <stdlib.h>
-int main() {
+/*int main() {
     int i, last = -1;
     char str[100], ch;
 
@@ -60,4 +60,33 @@ int main() {
 
         return 0;
     }
+}*/
+
+/*#include <stdio.h>
+int main() {
+char s1[10];
+    printf("Enter a string: ");
+    fgets(s1);
+    printf("you entered: %s\n", s1);
+    return 0;
+
+}*/
+
+
+
+
+#include <stdio.h>
+int main() {
+    int n;
+    int minutes, hours, seconds;
+    printf("Enter time in seconds: ");
+    scanf("%d", &n);
+    hours = n / 3600;
+    minutes = n / 60;
+    printf("Time in hours: %d\n", hours);
+    printf("Time in minutes: %d\n", minutes);
+
+    return 0;
+
 }
+
