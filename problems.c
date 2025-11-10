@@ -93,19 +93,35 @@ int main() {
 
 
 
+
+
+
+
+
+
+#include <stdio.h>
 #include <string.h>
+
+
+
+#include <stdio.h>
 int main() {
-    int count = 0;
-char str[50];
-    printf("Enter a string: ");
-    fgets(str, 50, stdin);
-    count = strlen(str);
-    printf("You entered: %d", count);
+    int i, j;
+    int a[3][5];
+
+    for (i=0; i<3; i++) {
+        for (j=0; j<5; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    for (i=0; i<3; i++) {
+        for (j=0; j<5; j++) {
+            printf("%d", a[i][j]);
+        }
+    }
+
     return 0;
-
-
-
-
 }
 
 
