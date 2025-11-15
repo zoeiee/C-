@@ -1,20 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 int main() {
-    int count = 0;
-    char s1[12];
-    printf("Enter string to generate: ");
-    fgets(s1,sizeof(s1), stdin);
-    count = strlen(s1);
-    printf("The length of the string is: %d\n", count);
+    char s1[100] = "Aditi ";
+    char s2[90] = "Jha";
+    strcat(s1, s2);
+    printf("%s\n", s1);
     return 0;
-
-
-    int i,
-    i = 0;
-    while (s1[i] != '\0') {
-        i++;
-        count++;
-    }
-    printf("%d", count);
 }
