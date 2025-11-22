@@ -283,7 +283,7 @@ return 0;
 
 }*/
 
-#include <stdio.h>
+/*#include <stdio.h>
 int main() {
  char c;
     scanf("%c",&c);
@@ -295,4 +295,40 @@ int main() {
         printf("Digit");
 
     return 0;
-}
+}*/
+
+/*#include <stdio.h>
+int main() {
+int n, i;
+    printf("Enter n: ");
+    scanf("%d",&n);
+    for (i = 0; i <= n; i++)
+        printf("%d", i);
+    return 0;
+}*/
+
+/*#include <stdio.h>
+int main() {
+int n, i, sum = 0;
+    printf("Enter n: ");
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++)
+        sum += i;
+        printf("Sum is: %d", sum);
+
+
+    return 0;
+}*/
+
+/*#include <stdio.h>
+int main() {
+int n,i;
+    printf("Enter n: ");
+    scanf("%d",&n);
+    for (i = i; i <= 10; i++)
+        printf("%d x %d = %d\n",n,i, n*i);
+
+    return 0;
+}*/
+
+
