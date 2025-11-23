@@ -330,5 +330,96 @@ int n,i;
 
     return 0;
 }*/
+/*#include <stdio.h>
+int main() {
+    int a[10], n, i;
+    scanf("%d", &n);
+    for (i = 0; i < n; i++)
+        scanf("%d", a[i]);
+    for (i = 0; i < n; i++)
+        printf("%d ", a[i]);
+    return 0;
+}*/
 
+/*#include <stdio.h>
+int main() {
+    char s[50];
+    fgets(s, 50, stdin);
+    puts(s);
+    return 0;
+}*/
 
+/*#include <stdio.h>
+int main() {
+    char s[50];
+    int i = 0;
+    printf("Enter the string: ");
+    fgets(s, 50, stdin);
+    while (s[i] != '\0')
+        i++;
+    printf("%d", i);
+    return 0;
+}*/
+
+/*#include <stdio.h>
+int main() {
+    int a,b,sum;
+    a = 10;
+    b = 19;
+    sum = a + b;
+    printf("Sum is %d\n", sum);
+
+    return 0;
+}*/
+
+/*#include <stdio.h>
+
+int main() {
+    int num, temp, sum = 0, digit;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    temp = num;
+
+    while(temp != 0) {
+        digit = temp % 10;  // get last digit
+        sum += digit;       // add to sum
+        temp /= 10;         // remove last digit
+    }
+
+    printf("Sum of digits of %d is %d\n", num, sum);
+
+    return 0;
+}*/
+
+/*#include<stdio.h>
+#define SQR(x) (x*x)
+int main()
+{
+    int a;
+    int b=4;
+    a=SQR(b+2);
+    printf("%d\n",a);
+    return 0;
+}*/
+#include <stdio.h>
+
+int main() {
+    int i, j, N;
+
+    printf("Enter the number of rows: ");
+    scanf("%d", &N);
+
+    for (i = 1; i <= N; i++) {          // Loop for rows
+        for (j = 1; j <= N; j++) {      // Loop for columns
+            if (i == 1 || i == N || j == 1 || j == N)
+                printf("* ");           // Print star at boundary
+            else
+                printf("  ");           // Print space inside
+        }
+        printf("\n");                   // Newline after each row
+    }
+
+    return 0;
+}
